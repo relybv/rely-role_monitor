@@ -17,7 +17,7 @@ describe 'role_monitor' do
           it { is_expected.to compile.with_all_deps }
           # classes
           it { is_expected.to contain_class('role_monitor') }
-          it { is_expected.to contain_class('profile_base') }
+          it { is_expected.to contain_class('profile_influxdb') }
 
         end
       end
