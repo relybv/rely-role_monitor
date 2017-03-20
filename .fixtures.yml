@@ -1,0 +1,9 @@
+fixtures:
+  repositories:
+    stdlib:
+      repo: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+      ref: "4.12.0"
+    profile_influxdb: "https://github.com/relybv/rely-profile_influxdb.git"
+
+  symlinks:
+    role_monitor: "#{source_dir}"
