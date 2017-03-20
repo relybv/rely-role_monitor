@@ -10,6 +10,7 @@ fixtures:
     wget: "https://github.com/maestrodev/puppet-wget.git"
     influxdb: "https://github.com/n1tr0g/golja-influxdb.git"
     grafana: "https://github.com/voxpupuli/puppet-grafana.git"
+    profile_telegraf: "https://github.com/relybv/rely-profile_telegraf.git"
 
   symlinks:
     role_monitor: "#{source_dir}"

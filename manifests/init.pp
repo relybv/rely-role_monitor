@@ -11,5 +11,5 @@ class role_monitor
 {
   # a role includes one or more profiles and at least a 'base' profile
   include ::profile_influxdb
-#  include ::profile_telegraf
+  include ::profile_telegraf
 }
