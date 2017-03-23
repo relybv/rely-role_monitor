@@ -43,6 +43,7 @@ node {
                 } catch (Exception err) {
                    currentBuild.result = 'SUCCESS'
                 }
+                slackSend "Job Ubuntu 14.04 ${currentBuild.result} ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
          }
       }
@@ -61,10 +62,11 @@ node {
                 } catch (Exception err) {
                    currentBuild.result = 'SUCCESS'
                 }
+                slackSend "Job Ubuntu 16.04 ${currentBuild.result} ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
          }
       }
    }
    archiveArtifacts '*.log'
-   slackSend "Job ${currentBuild.result}  ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+   slackSend "Job finished ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
 }
