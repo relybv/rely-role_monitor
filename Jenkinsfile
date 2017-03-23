@@ -3,7 +3,7 @@ node {
       properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '5', numToKeepStr: '6')), pipelineTriggers([pollSCM('H/15 * * * *')])])
       stage('Checkout') { // for display purposes
          // send slack message - pipeline started
-         slackSend "Started ${env.JOB_NAME} ${env.BUILD_NUMBER} on ${env.NODE_NAME} (<${env.BUILD_URL}|Open>)"
+         slackSend "Started ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
          // Clean workspace before checkout
          step ([$class: 'WsCleanup'])
          // Get some code from a GitHub repository
@@ -66,4 +66,5 @@ node {
       }
    }
    archiveArtifacts '*.log'
+   slackSend "Job ${currentBuild.result}  ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
 }
