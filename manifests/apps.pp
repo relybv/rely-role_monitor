@@ -12,7 +12,6 @@ class role_monitor::apps
   # just for test, include application is auto monitor
 
   class { 'apache':
-    default_vhost => false,
     mpm_module    => 'prefork',
     keepalive     => 'On',
     default_mods  => [
