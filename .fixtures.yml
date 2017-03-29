@@ -12,6 +12,10 @@ fixtures:
     grafana: "https://github.com/voxpupuli/puppet-grafana.git"
     telegraf: "https://github.com/datacentred/puppet-telegraf.git"
     profile_telegraf: "https://github.com/relybv/rely-profile_telegraf.git"
+    apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
+    concat:
+      repo: "https://github.com/puppetlabs/puppetlabs-concat.git"
+      branch: "1.2.x"
 
   symlinks:
     role_monitor: "#{source_dir}"
