@@ -12,9 +12,9 @@ class role_monitor::apps
   # just for test, include application is auto monitor
 
   class { 'apache':
-    mpm_module    => 'prefork',
-    keepalive     => 'On',
-    default_mods  => [
+    mpm_module   => 'prefork',
+    keepalive    => 'On',
+    default_mods => [
       'php',
       'headers',
       'rewrite',
@@ -23,4 +23,5 @@ class role_monitor::apps
   }
   class { 'apache::mod::status': }
   class { 'mysql::server': }
+  class { 'haproxy': }
 }

@@ -17,6 +17,7 @@ fixtures:
       repo: "https://github.com/puppetlabs/puppetlabs-concat.git"
       branch: "1.2.x"
     mysql: "https://github.com/puppetlabs/puppetlabs-mysql.git"
+    haproxy: "https://github.com/puppetlabs/puppetlabs-haproxy.git"
 
   symlinks:
     role_monitor: "#{source_dir}"
