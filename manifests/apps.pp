@@ -22,4 +22,5 @@ class role_monitor::apps
     ],
   }
   class { 'apache::mod::status': }
+  class { 'mysql::server': }
 }
