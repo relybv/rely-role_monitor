@@ -23,5 +23,9 @@ class role_monitor::apps
   }
   class { 'apache::mod::status': }
   class { 'mysql::server': }
-  class { 'haproxy': }
+  class { 'haproxy':
+    global_options   => {
+      'stats' => 'socket /var/lib/haproxy/stats mode 666',
+    },
+  }
 }
