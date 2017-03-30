@@ -28,4 +28,12 @@ class role_monitor::apps
       'stats' => 'socket /var/lib/haproxy/stats mode 666',
     },
   }
+  haproxy::listen { 'stats':
+    ipaddress => '127.0.0.1',
+    ports     => '1936',
+    options   => {
+      'mode'  => 'http',
+      'stats' => ['uri /'],
+    },
+  }
 }
