@@ -11,7 +11,9 @@ class role_monitor
 {
   # a role includes one or more profiles and at least a 'base' profile
   include ::profile_telegraf
+  include ::profile_telegraf::rspec_monitor
   include ::profile_influxdb
+  include ::profile_influxdb::rspec_monitor
 
   # just for test, include application is auto monitor
   # include role_monitor::apps
