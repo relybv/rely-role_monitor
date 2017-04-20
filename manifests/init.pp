@@ -14,5 +14,5 @@ class role_monitor
   include ::profile_influxdb
 
   # just for test, include application is auto monitor
-  include role_monitor::apps
+  # include role_monitor::apps
 }
