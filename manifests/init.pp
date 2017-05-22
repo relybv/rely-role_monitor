@@ -18,5 +18,7 @@ class role_monitor
   include ::profile_beats::rspec_monitor
   include ::profile_elasticsearch
   include ::profile_elasticsearch::rspec_monitor
+  include ::profile_mcollective
+  include ::profile_mcollective::rspec_monitor
 
 }

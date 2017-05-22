@@ -11,6 +11,7 @@ fixtures:
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
     profile_beats: "https://github.com/relybv/rely-profile_beats.git"
     profile_elasticsearch: "https://github.com/relybv/rely-profile_elasticsearch.git"
+    profile_mcollective: "https://github.com/relybv/rely-profile_mcollective.git"
     zypprepo: "https://github.com/voxpupuli/puppet-zypprepo.git"
     elasticsearch: "https://github.com/elastic/puppet-elasticsearch.git"
     yum: "https://github.com/CERIT-SC/puppet-yum.git"
