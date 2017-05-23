@@ -14,6 +14,7 @@ describe 'role_monitor class' do
       # Using puppet_apply as a helper
       it 'should work idempotently with no errors' do
         pp = <<-EOS
+        $monitor_address = 'localhost'
         class { 'role_monitor': }
         EOS
 
