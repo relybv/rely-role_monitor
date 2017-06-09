@@ -4,6 +4,7 @@ fixtures:
       repo: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
       ref: "4.13.1"
     apt : "https://github.com/puppetlabs/puppetlabs-apt.git"
+    inifile: "https://github.com/puppetlabs/puppetlabs-inifile.git"
     java: "https://github.com/puppetlabs/puppetlabs-java.git"
     java_ks: "https://github.com/puppetlabs/puppetlabs-java_ks.git"
     datacat: "https://github.com/richardc/puppet-datacat.git"
@@ -12,6 +13,7 @@ fixtures:
     profile_beats: "https://github.com/relybv/rely-profile_beats.git"
     profile_elasticsearch: "https://github.com/relybv/rely-profile_elasticsearch.git"
     profile_mcollective: "https://github.com/relybv/rely-profile_mcollective.git"
+    profile_rundeck: "https://github.com/relybv/rely-profile_rundeck.git"
     zypprepo: "https://github.com/voxpupuli/puppet-zypprepo.git"
     elasticsearch: "https://github.com/elastic/puppet-elasticsearch.git"
     rabbitmq: "https://github.com/puppetlabs/puppetlabs-rabbitmq.git"
@@ -32,6 +34,7 @@ fixtures:
       branch: "1.2.x"
     mysql: "https://github.com/puppetlabs/puppetlabs-mysql.git"
     haproxy: "https://github.com/puppetlabs/puppetlabs-haproxy.git"
+    rundeck: "https://github.com/voxpupuli/puppet-rundeck.git"
 
   symlinks:
     role_monitor: "#{source_dir}"

@@ -20,5 +20,7 @@ class role_monitor
   include ::profile_elasticsearch::rspec_monitor
   include ::profile_mcollective
   include ::profile_mcollective::rspec_monitor
+  include ::profile_rundeck
+  include ::profile_rundeck::rspec_monitor
 
 }
