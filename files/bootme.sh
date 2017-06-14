@@ -69,4 +69,4 @@ echo "Preparing modules"
 cp -a /root/role_monitor/spec/fixtures/modules/* $MODULEDIR
 
 echo "Run puppet apply"
-/usr/local/bin/puppet apply -e "include role_monitor"
+/usr/local/bin/puppet apply -e "include role_monitor" --write-catalog-summary
