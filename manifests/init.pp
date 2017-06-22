@@ -7,8 +7,9 @@
 # [*sample_parameter*]
 #   Explanation of what this parameter affects and what it defaults to.
 #
-class role_monitor
-{
+class role_monitor (
+  $jobs = true,
+){
   # a role includes one or more profiles and at least a 'base' profile
   include ::profile_telegraf
   include ::profile_telegraf::rspec_monitor
@@ -20,6 +21,6 @@ class role_monitor
   include ::profile_elasticsearch::rspec_monitor
   include ::profile_mcollective
   include ::profile_mcollective::rspec_monitor
-  include ::profile_rundeck
+  class { '::profile_rundeck': jobs => $jobs, }
   include ::profile_rundeck::rspec_monitor
 }

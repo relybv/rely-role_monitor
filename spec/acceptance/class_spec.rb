@@ -15,7 +15,7 @@ describe 'role_monitor class' do
       it 'should work idempotently with no errors' do
         pp = <<-EOS
         $monitor_address = 'localhost'
-        class { 'role_monitor': }
+        class { 'role_monitor': jobs => false, }
         EOS
 
         # Run it twice and test for idempotency
