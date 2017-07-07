@@ -69,4 +69,4 @@ echo "Preparing modules"
 cp -a /root/role_monitor/spec/fixtures/modules/* $MODULEDIR
 
 echo "Run puppet apply"
-/usr/local/bin/puppet apply -e "include role_monitor" --write-catalog-summary --log_level=err
+FACTER_monitor_address=localhost /usr/local/bin/puppet apply -e "include role_monitor" --write-catalog-summary --log_level=err
