@@ -12,13 +12,13 @@ describe 'role_monitor class' do
   context 'default parameters' do
     if ENV['BEAKER'] == 'true'
       # Using puppet_apply as a helper
-      it 'should work idempotently with no errors' do
+      it 'should work with no errors' do
         pp = <<-EOS
         $monitor_address = 'localhost'
         class { 'role_monitor': jobs => false, }
         EOS
 
-        # Run it twice and test for idempotency
+        # Run it 
         apply_manifest(pp, :catch_failures => true)
       end
     end

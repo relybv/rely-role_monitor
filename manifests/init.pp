@@ -15,10 +15,10 @@ class role_monitor (
   include ::profile_telegraf::rspec_monitor
   include ::profile_influxdb
   include ::profile_influxdb::rspec_monitor
-  include ::profile_beats
-  include ::profile_beats::rspec_monitor
   include ::profile_elasticsearch
   include ::profile_elasticsearch::rspec_monitor
+  include ::profile_beats
+  include ::profile_beats::rspec_monitor
   include ::profile_mcollective
   include ::profile_mcollective::rspec_monitor
   class { '::profile_rundeck': jobs => $jobs, }
