@@ -24,7 +24,9 @@ fixtures:
     wget: "https://github.com/maestrodev/puppet-wget.git"
     influxdb: "https://github.com/n1tr0g/golja-influxdb.git"
     grafana: "https://github.com/voxpupuli/puppet-grafana.git"
-    telegraf: "https://github.com/datacentred/puppet-telegraf.git"
+    telegraf:
+      repo: "https://github.com/datacentred/puppet-telegraf.git"
+      ref: "1.4.0"
     profile_telegraf: "https://github.com/relybv/rely-profile_telegraf.git"
     filebeat: "https://github.com/pcfens/puppet-filebeat.git"
     apache: "https://github.com/puppetlabs/puppetlabs-apache.git"

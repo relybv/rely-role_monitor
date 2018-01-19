@@ -60,7 +60,6 @@ bash /root/role_monitor/files/bootstrap.sh $PUPPETMAJOR
 # prepare bundle
 echo "Installing gems"
 /opt/puppetlabs/puppet/bin/gem install puppetlabs_spec_helper --no-rdoc --no-ri -q
-/opt/puppetlabs/puppet/bin/gem install toml-rb --no-rdoc --no-ri -q
 
 # install dependencies from .fixtures
 echo "Preparing modules"
