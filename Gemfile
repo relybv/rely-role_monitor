@@ -11,7 +11,6 @@ group :test do
   gem "rspec-puppet-facts"
   gem 'ci_reporter_rspec', '>= 1.0.0'
   gem "semantic_puppet"
-  gem "toml-rb"
   gem "puppet-lint-leading_zero-check"
   gem "puppet-lint-trailing_comma-check"
   gem "puppet-lint-version_comparison-check"
